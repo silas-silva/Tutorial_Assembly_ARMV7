@@ -1,0 +1,20 @@
+{
+    "add" : "Adiciona dois registradores, colocando o resultado no primeiro registrador.",
+    "sub":  "Subtrai um registrador de outro, colocando o resultado no primeiro registrador.",
+    "rsb":  "Subtrai um registrador de outro, colocando o resultado no segundo registrador.",
+    "mov":  "Move um valor para um registrador.",
+    "ldr":  "Carrega um valor da memória para um registrador.",
+    "str":  "Armazena o valor de um registrador na memória.",
+    "cmp":  "Compara dois valores em registradores.",
+    "beq":  "Pula para um rótulo se os valores comparados são iguais.",
+    "bne":  "Pula para um rótulo se os valores comparados são diferentes.",
+    "bge":  "Pula para um rótulo se o valor comparado é maior ou igual.",
+    "blt":  "Pula para um rótulo se o valor comparado é menor.",
+    "bgt":  "Pula para um rótulo se o valor comparado é maior.",
+    "ble":  "Pula para um rótulo se o valor comparado é menor ou igual.",
+    "b":    "Pula para um rótulo.",
+    "bx":   "Pula para um endereço, mudando para o modo de execução especificado.",
+    "bl":   "Pula para um rótulo, salvando o endereço atual no registrador de link.",
+    "svc":  "Chamada de sistema.",
+    "nop":  "Nenhuma operação, o que significa que nada acontece."
+}
