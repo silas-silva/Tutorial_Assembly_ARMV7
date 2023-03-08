@@ -16,7 +16,8 @@ const instrucoes = {
     "bx":   "Pula para um endereço, mudando para o modo de execução especificado.",
     "bl":   "Pula para um rótulo, salvando o endereço atual no registrador de link.",
     "svc":  "Chamada de sistema.",
-    "nop":  "Nenhuma operação, o que significa que nada acontece."
+    "nop":  "Nenhuma operação, o que significa que nada acontece.",
+    "bic" : "A instrução BIC (bit clear) é uma instrução de processador em linguagem de montagem que permite limpar (zerar) um ou mais bits em um registrador de 32 bits"
 }
 
 const registradores = {
