@@ -45,6 +45,37 @@
             </div>
         
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://cpulator.01xz.net/?sys=arm">Compilador para ARMv7</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <code>
+            <p>.equ GPIO_BASE, 0x01C20800   @ endereço base da porta GPIO</p>
+            <p>.equ OFF_SET, 0x0C           @ deslocamento do registrador de controle da porta desejada (PB3) Pino 3
+                                        @ para mudar de pino é só fazer (numero do pino * 4 e transformar em Hexadecimal)</p>
+
+            <p>.global _start</p>
+
+            <p>_start:</p>
+            <p>    ldr r0, =GPIO_BASE     @ carrega o endereço base da porta GPIO no registrador r0</p>
+            <p>    ldr r1, =OFF_SET       @ carrega o deslocamento do registrador de controle da porta desejada (PB3) no registrador r1</p>
+                
+            <p>    mov r2, #1             @ carrega o valor de controle desejado (0x1 para configurar como saída) no registrador r2</p>
+            <p>    str r2, [r0, r1]       @ escreve o valor no registrador de controle da porta desejada
+                                    @ o str vai carregar o valor de r2, na posição de memoria encontrada por r0 + r1</p>
+
+            <p>loop:</p>
+            <p>    b loop:</p>
+        </code>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
     
 </body>
