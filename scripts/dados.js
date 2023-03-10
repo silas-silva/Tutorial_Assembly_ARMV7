@@ -18,8 +18,13 @@ const instrucoes = {
     "svc":  "Chamada de sistema.",
     "nop":  "Nenhuma operação, o que significa que nada acontece.",
     "bic" : "A instrução BIC (bit clear) é uma instrução de processador em linguagem de montagem que permite limpar (zerar) um ou mais bits em um registrador de 32 bits",
+    "lsl" : "Usada para deslocar os bits de um registrador para a esquerda por um número especificado de posições.",
     "=" : "O sinal de igual (=) é um operador no assembly que é usado para definir uma constante no programa. Ele é chamado de operador de atribuição imediata",
-    ".equ" : "É uma diretiva do Assembly que define um valor constante"
+    ".equ" : "É uma diretiva do Assembly que define um valor constante",
+    ".word" : "A diretiva '.word' no assembly do ARM é usada para reservar uma palavra de memória de 32 bits e inicializar o seu valor com o dado especificado",
+    "" : "",
+    "" : ""
+
 }
 
 const registradores = {
